@@ -13,7 +13,9 @@ public class Schedule extends AbstractSolution<HardSoftScore> implements java.io
 
    static final long serialVersionUID = 1L;
 
+   @org.optaplanner.core.api.domain.valuerange.ValueRangeProvider(id = "computerRange")
    private java.util.List<cb.Computer> computerList;
+   @org.optaplanner.core.api.domain.solution.PlanningEntityCollectionProperty
    private java.util.List<cb.Process> processList;
 
    public Schedule()
