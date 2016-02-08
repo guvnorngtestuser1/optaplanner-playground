@@ -13,8 +13,38 @@ public class Schedule extends AbstractSolution<HardSoftScore> implements java.io
 
    static final long serialVersionUID = 1L;
 
+   private java.util.List<cb.Computer> computerList;
+   private java.util.List<cb.Process> processList;
+
    public Schedule()
    {
+   }
+
+   public java.util.List<cb.Computer> getComputerList()
+   {
+      return this.computerList;
+   }
+
+   public void setComputerList(java.util.List<cb.Computer> computerList)
+   {
+      this.computerList = computerList;
+   }
+
+   public java.util.List<cb.Process> getProcessList()
+   {
+      return this.processList;
+   }
+
+   public void setProcessList(java.util.List<cb.Process> processList)
+   {
+      this.processList = processList;
+   }
+
+   public Schedule(java.util.List<cb.Computer> computerList,
+         java.util.List<cb.Process> processList)
+   {
+      this.computerList = computerList;
+      this.processList = processList;
    }
 
 }
