@@ -2,6 +2,7 @@
   <scanAnnotatedClasses xStreamId="2"/>
   <scoreDirectorFactory xStreamId="3">
     <scoreDefinitionType>HARD_SOFT</scoreDefinitionType>
+    <ksessionName>myKsession</ksessionName>
   </scoreDirectorFactory>
   <termination xStreamId="4">
     <secondsSpentLimit>0</secondsSpentLimit>
