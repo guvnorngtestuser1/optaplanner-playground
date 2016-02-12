@@ -1,8 +1,1 @@
-<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <kbase name="john" default="false" eventProcessingMode="stream" equalsBehavior="identity">
-    <ksession name="rambo" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-  <kbase name="hello" default="false" eventProcessingMode="stream" equalsBehavior="identity">
-    <ksession name="isitme" type="stateless" default="false" clockType="realtime"/>
-  </kbase>
-</kmodule>
+<kmodule xmlns="http://jboss.org/kie/6.0.0/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
