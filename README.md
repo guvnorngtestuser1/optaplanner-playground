@@ -1,4 +1,4 @@
-guvnorng-playground
+optaplanner example repository
 ===================
 
-GuvnorNG Playground
+Simple example for optaplanner workbench
