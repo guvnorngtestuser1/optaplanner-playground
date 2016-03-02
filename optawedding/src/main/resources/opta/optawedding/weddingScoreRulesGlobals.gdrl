@@ -1,0 +1,3 @@
+package opta.optawedding;
+
+global java.lang.String scoreHolder;

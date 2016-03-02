@@ -1,0 +1,3 @@
+= OptaPlanner playground
+
+This repository contains examples for http://www.optaplanner.org[OptaPlanner] Workbench.
