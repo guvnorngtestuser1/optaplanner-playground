@@ -1,9 +1,0 @@
-package cb;
-
-
-import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
-
-import cb.Computer;
-import cb.Process;
-
-global HardSoftScoreHolder scoreHolder;
