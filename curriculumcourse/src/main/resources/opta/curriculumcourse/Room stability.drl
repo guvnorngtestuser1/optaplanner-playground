@@ -1,0 +1,20 @@
+package opta.curriculumcourse;
+
+import java.lang.Number;
+
+import opta.curriculumcourse.Course;
+import opta.curriculumcourse.Lecture;
+import opta.curriculumcourse.Room;
+
+rule "Room stability"
+    when
+        $course : Course()
+        accumulate(
+            $room : Room()
+            and exists Lecture(course == $course, room == $room);
+            $roomCount : count($room);
+            $roomCount > 1
+        )
+    then
+        scoreHolder.addSoftConstraintMatch(kcontext, -($roomCount.intValue() - 1));
+end

@@ -1,0 +1,374 @@
+<opta.curriculumcourse.CourseSchedule>
+  <id>0</id>
+  <name>Curriculum course scheduling example</name>
+  <teacherList>
+    <opta.curriculumcourse.Teacher>
+      <id>0</id>
+      <code>Teacher 1</code>
+    </opta.curriculumcourse.Teacher>
+    <opta.curriculumcourse.Teacher>
+      <id>1</id>
+      <code>Teacher 2</code>
+    </opta.curriculumcourse.Teacher>
+    <opta.curriculumcourse.Teacher>
+      <id>2</id>
+      <code>Teacher 3</code>
+    </opta.curriculumcourse.Teacher>
+    <opta.curriculumcourse.Teacher>
+      <id>3</id>
+      <code>Teacher 4</code>
+    </opta.curriculumcourse.Teacher>
+  </teacherList>
+  <curriculumList>
+    <opta.curriculumcourse.Curriculum>
+      <id>0</id>
+      <code>Science</code>
+    </opta.curriculumcourse.Curriculum>
+    <opta.curriculumcourse.Curriculum>
+      <id>1</id>
+      <code>Humanities</code>
+    </opta.curriculumcourse.Curriculum>
+  </curriculumList>
+  <courseList>
+    <opta.curriculumcourse.Course>
+      <id>0</id>
+      <code>Math</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[1]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>2</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[1]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>1</id>
+      <code>Physics</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[2]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[1]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>2</id>
+      <code>Chemistry</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[2]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[1]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>3</id>
+      <code>Philosophy</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[4]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>4</id>
+      <code>History</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[3]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>2</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>5</id>
+      <code>Art</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[3]"/>
+      <lectureSize>2</lectureSize>
+      <minWorkingDaySize>1</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>50</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>6</id>
+      <code>English</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[1]"/>
+      <lectureSize>3</lectureSize>
+      <minWorkingDaySize>3</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[1]"/>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>150</studentSize>
+    </opta.curriculumcourse.Course>
+    <opta.curriculumcourse.Course>
+      <id>7</id>
+      <code>German</code>
+      <teacher reference="../../../teacherList/opta.curriculumcourse.Teacher[4]"/>
+      <lectureSize>3</lectureSize>
+      <minWorkingDaySize>3</minWorkingDaySize>
+      <curriculumList>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[1]"/>
+        <opta.curriculumcourse.Curriculum reference="../../../../curriculumList/opta.curriculumcourse.Curriculum[2]"/>
+      </curriculumList>
+      <studentSize>150</studentSize>
+    </opta.curriculumcourse.Course>
+  </courseList>
+  <dayList>
+    <opta.curriculumcourse.Day>
+      <id>0</id>
+      <dayIndex>0</dayIndex>
+      <periodList>
+        <opta.curriculumcourse.Period>
+          <id>0</id>
+          <day reference="../../../../opta.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>0</id>
+            <timeslotIndex>0</timeslotIndex>
+          </timeslot>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>1</id>
+          <day reference="../../../../opta.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>1</id>
+            <timeslotIndex>1</timeslotIndex>
+          </timeslot>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>2</id>
+          <day reference="../../../../opta.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>2</id>
+            <timeslotIndex>2</timeslotIndex>
+          </timeslot>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>3</id>
+          <day reference="../../../../opta.curriculumcourse.Day[1]"/>
+          <timeslot>
+            <id>3</id>
+            <timeslotIndex>3</timeslotIndex>
+          </timeslot>
+        </opta.curriculumcourse.Period>
+      </periodList>
+    </opta.curriculumcourse.Day>
+    <opta.curriculumcourse.Day>
+      <id>1</id>
+      <dayIndex>1</dayIndex>
+      <periodList>
+        <opta.curriculumcourse.Period>
+          <id>4</id>
+          <day reference="../../../../opta.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[1]/timeslot"/>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>5</id>
+          <day reference="../../../../opta.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[2]/timeslot"/>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>6</id>
+          <day reference="../../../../opta.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[3]/timeslot"/>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>7</id>
+          <day reference="../../../../opta.curriculumcourse.Day[2]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[4]/timeslot"/>
+        </opta.curriculumcourse.Period>
+      </periodList>
+    </opta.curriculumcourse.Day>
+    <opta.curriculumcourse.Day>
+      <id>2</id>
+      <dayIndex>2</dayIndex>
+      <periodList>
+        <opta.curriculumcourse.Period>
+          <id>8</id>
+          <day reference="../../../../opta.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[1]/timeslot"/>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>9</id>
+          <day reference="../../../../opta.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[2]/timeslot"/>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>10</id>
+          <day reference="../../../../opta.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[3]/timeslot"/>
+        </opta.curriculumcourse.Period>
+        <opta.curriculumcourse.Period>
+          <id>11</id>
+          <day reference="../../../../opta.curriculumcourse.Day[3]"/>
+          <timeslot
+              reference="../../../../opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[4]/timeslot"/>
+        </opta.curriculumcourse.Period>
+      </periodList>
+    </opta.curriculumcourse.Day>
+  </dayList>
+  <timeslotList>
+    <opta.curriculumcourse.Timeslot
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[1]/timeslot"/>
+    <opta.curriculumcourse.Timeslot
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[2]/timeslot"/>
+    <opta.curriculumcourse.Timeslot
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[3]/timeslot"/>
+    <opta.curriculumcourse.Timeslot
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[4]/timeslot"/>
+  </timeslotList>
+  <periodList>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[1]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[2]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[3]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[1]/periodList/opta.curriculumcourse.Period[4]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[2]/periodList/opta.curriculumcourse.Period[1]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[2]/periodList/opta.curriculumcourse.Period[2]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[2]/periodList/opta.curriculumcourse.Period[3]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[2]/periodList/opta.curriculumcourse.Period[4]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[3]/periodList/opta.curriculumcourse.Period[1]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[3]/periodList/opta.curriculumcourse.Period[2]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[3]/periodList/opta.curriculumcourse.Period[3]"/>
+    <opta.curriculumcourse.Period
+        reference="../../dayList/opta.curriculumcourse.Day[3]/periodList/opta.curriculumcourse.Period[4]"/>
+  </periodList>
+  <roomList>
+    <opta.curriculumcourse.Room>
+      <id>0</id>
+      <code>A-1</code>
+      <capacity>150</capacity>
+    </opta.curriculumcourse.Room>
+    <opta.curriculumcourse.Room>
+      <id>1</id>
+      <code>B-1</code>
+      <capacity>50</capacity>
+    </opta.curriculumcourse.Room>
+    <opta.curriculumcourse.Room>
+      <id>2</id>
+      <code>B-2</code>
+      <capacity>50</capacity>
+    </opta.curriculumcourse.Room>
+    <opta.curriculumcourse.Room>
+      <id>3</id>
+      <code>B-3</code>
+      <capacity>50</capacity>
+    </opta.curriculumcourse.Room>
+  </roomList>
+  <lectureList>
+    <opta.curriculumcourse.Lecture>
+      <id>0</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[1]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>1</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[1]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>2</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[5]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>3</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[5]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>4</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[7]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>5</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[7]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>6</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[7]"/>
+      <lectureIndexInCourse>2</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>7</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[8]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>8</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[8]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>9</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[8]"/>
+      <lectureIndexInCourse>2</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>10</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[2]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>11</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[2]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>12</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[3]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>13</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[3]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>14</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[4]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>15</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[4]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>16</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[6]"/>
+      <lectureIndexInCourse>0</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+    <opta.curriculumcourse.Lecture>
+      <id>17</id>
+      <course reference="../../../courseList/opta.curriculumcourse.Course[6]"/>
+      <lectureIndexInCourse>1</lectureIndexInCourse>
+    </opta.curriculumcourse.Lecture>
+  </lectureList>
+</opta.curriculumcourse.CourseSchedule>

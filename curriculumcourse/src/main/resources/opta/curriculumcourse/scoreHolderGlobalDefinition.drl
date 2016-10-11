@@ -1,0 +1,7 @@
+package opta.curriculumcourse;
+
+import org.optaplanner.core.api.score.buildin.hardsoft.HardSoftScoreHolder;
+
+// This file was automatically generated to provide scoreHolder variable in Guided rule editor
+
+global HardSoftScoreHolder scoreHolder;

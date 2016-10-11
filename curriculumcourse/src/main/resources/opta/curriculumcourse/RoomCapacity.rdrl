@@ -1,0 +1,12 @@
+package opta.curriculumcourse;
+
+import java.lang.Number;
+
+rule "RoomCapacity"
+	dialect "mvel"
+	when
+		$room : Room( )
+		Lecture( room == $room , $studentSize : course.studentSize > $room.capacity )
+	then
+		scoreHolder.addHardConstraintMatch(kcontext, $room.capacity - $studentSize);
+end

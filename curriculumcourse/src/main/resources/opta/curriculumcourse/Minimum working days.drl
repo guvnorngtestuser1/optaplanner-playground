@@ -1,0 +1,22 @@
+package opta.curriculumcourse;
+
+import java.lang.Number;
+
+import opta.curriculumcourse.Course;
+import opta.curriculumcourse.Day;
+import opta.curriculumcourse.Lecture;
+
+rule "minimumWorkingDays"
+    when
+        $course : Course($minWorkingDaySize : minWorkingDaySize)
+        accumulate(
+            $day : Day()
+            and exists Lecture(course == $course, period != null, period.day == $day);
+            $dayCount : count($day);
+            $dayCount < $minWorkingDaySize
+        )
+        exists Lecture(course == $course, period != null)
+    then
+        scoreHolder.addSoftConstraintMatch(kcontext, (($dayCount.intValue() - $minWorkingDaySize) * 5));
+end
+
